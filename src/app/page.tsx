@@ -1,6 +1,6 @@
 "use client"
 
-import { UniverseBackground } from "./components/universe-background/UniverseBackground"
+import { UniverseBackground } from "../components/universe-background/UniverseBackground"
 
 export default function Home() {
   return (
