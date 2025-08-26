@@ -6,6 +6,8 @@ This is a simple boilerplate application written with React (Next.Js) that aims 
 
 Pre-requisites: docker, docker compose, Node.js.
 
+Add your own pages using the [app router](https://nextjs.org/docs/app) rules (if you want a certain page to load first by default, use url rewrite rules through nginx or cloudflare). If you want to redirect just the root, use as rewrite rule `/` -> `/your-page`. If you have multiple pages configured and you want to allow access to only one of them, redirect everything with `/*` -> `/your-page`, except requests at `_next` (static files).
+
 Use standard commands - `npm run dev`, `npm run build` etc.
 
 ### Deployment
